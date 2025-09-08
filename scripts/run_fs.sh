@@ -1,0 +1,66 @@
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/wc+rs-3d-c4-obj1.csv | tee ../FS_results/wc+rs-3d-c4-obj1.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/wc+sol-3d-c4-obj1.csv | tee ../FS_results/wc+sol-3d-c4-obj1.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/wc+wc-3d-c4-obj1.csv | tee ../FS_results/wc+wc-3d-c4-obj1.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/SS-D.csv | tee ../FS_results/SS-D.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/SS-F.csv | tee ../FS_results/SS-F.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/SS-G.csv | tee ../FS_results/SS-G.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/SS-B.csv | tee ../FS_results/SS-B.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/SS-E.csv | tee ../FS_results/SS-E.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/SS-A.csv | tee ../FS_results/SS-A.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/SS-C.csv | tee ../FS_results/SS-C.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/SS-H.csv | tee ../FS_results/SS-H.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/SS-I.csv | tee ../FS_results/SS-I.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/misc/auto93.csv | tee ../FS_results/auto93.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/sol-6d-c2-obj1.csv | tee ../FS_results/sol-6d-c2-obj1.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/wc-6d-c1-obj1.csv | tee ../FS_results/wc-6d-c1-obj1.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/rs-6d-c3_obj1.csv | tee ../FS_results/rs-6d-c3_obj1.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/rs-6d-c3_obj2.csv | tee ../FS_results/rs-6d-c3_obj2.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/SS-K.csv | tee ../FS_results/SS-K.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/SS-J.csv | tee ../FS_results/SS-J.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/SS-S.csv | tee ../FS_results/SS-S.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/Apache_AllMeasurements.csv | tee ../FS_results/Apache_AllMeasurements.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/process/pom3d.csv | tee ../FS_results/pom3d.csv
+
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/hpo/healthCloseIsses12mths0001-hard.csv | tee ../FS_results/healthCloseIsses12mths0001-hard.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/hpo/healthCloseIsses12mths0011-easy.csv | tee ../FS_results/healthCloseIsses12mths0011-easy.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/misc/Wine_quality.csv | tee ../FS_results/Wine_quality.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/SS-O.csv | tee ../FS_results/SS-O.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/SS-L.csv | tee ../FS_results/SS-L.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/SS-P.csv | tee ../FS_results/SS-P.csv
+
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/SS-T.csv | tee ../FS_results/SS-T.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/SS-Q.csv | tee ../FS_results/SS-Q.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/HSMGP_num.csv | tee ../FS_results/HSMGP_num.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/SS-R.csv | tee ../FS_results/SS-R.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/X264_AllMeasurements.csv | tee ../FS_results/X264_AllMeasurements.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/SS-V.csv | tee ../FS_results/SS-V.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/SS-M.csv | tee ../FS_results/SS-M.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/process/coc1000.csv | tee ../FS_results/coc1000.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/SS-U.csv | tee ../FS_results/SS-U.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/process/nasa93dem.csv | tee ../FS_results/nasa93dem.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/process/xomo_flight.csv | tee ../FS_results/xomo_flight.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/process/xomo_ground.csv | tee ../FS_results/xomo_ground.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/process/xomo_osp.csv | tee ../FS_results/xomo_osp.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/process/xomo_osp2.csv | tee ../FS_results/xomo_osp2.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/SQL_AllMeasurements.csv | tee ../FS_results/SQL_AllMeasurements.csv
+
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/process/pom3a.csv | tee ../FS_results/pom3a.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/process/pom3b.csv | tee ../FS_results/pom3b.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/process/pom3c.csv | tee ../FS_results/pom3c.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/SS-X.csv | tee ../FS_results/SS-X.csv
+
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/binary_config/billing10k.csv | tee ../FS_results/billing10k.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/binary_config/Scrum1k.csv | tee ../FS_results/Scrum1k.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/binary_config/Scrum10k.csv | tee ../FS_results/Scrum10k.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/binary_config/FFM-125-25-0.50-SAT-1.csv | tee ../FS_results/FFM-125-25-0.50-SAT-1.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/binary_config/FFM-250-50-0.50-SAT-1.csv | tee ../FS_results/FFM-250-50-0.50-SAT-1.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/binary_config/FFM-500-100-0.50-SAT-1.csv | tee ../FS_results/FFM-500-100-0.50-SAT-1.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/binary_config/FM-500-100-0.75-SAT-1.csv | tee ../FS_results/FM-500-100-0.75-SAT-1.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/binary_config/FM-500-100-1.00-SAT-1.csv | tee ../FS_results/FM-500-100-1.00-SAT-1.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/binary_config/FM-500-100-0.50-SAT-1.csv | tee ../FS_results/FM-500-100-0.50-SAT-1.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/binary_config/FM-500-100-0.25-SAT-1.csv | tee ../FS_results/FM-500-100-0.25-SAT-1.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/binary_config/FFM-1000-200-0.50-SAT-1.csv | tee ../FS_results/FFM-1000-200-0.50-SAT-1.csv
+
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/SS-W.csv | tee ../FS_results/SS-W.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/config/SS-N.csv | tee ../FS_results/SS-N.csv
+python3.12 ../src/FS_experiment.py ../datasets/moot/optimize/binary_config/Scrum100k.csv | tee ../FS_results/Scrum100k.csv
