@@ -1,6 +1,7 @@
 # Minimal Data, Maximum Clarity
 
 **A Heuristic for Explaining Optimization with Less Data**
+
 Authors: *Amirali Rayegan, Tim Menzies*
 Affiliation: *North Carolina State University*
 
@@ -15,19 +16,9 @@ This repository contains the research materials, code, and datasets supporting t
 
 We introduce **EZR**, a lightweight, interpretable, and modular framework for **multi-objective optimization** in software engineering. Unlike traditional optimization methods that require extensive labeled data, EZR embodies the **Maximum Clarity Heuristic**:
 
-> *To explain complex tasks, use less (but more informative) data.*
+> *To explain complex tasks, use less data.*
 
 EZR achieves near state-of-the-art optimization performance with a fraction of the labeling cost while producing **transparent, actionable explanations** that surpass attribution-based XAI methods such as LIME, SHAP, and BreakDown.
-
----
-
-## ✨ Key Contributions
-
-* **Maximum Clarity Heuristic**: Better optimization with fewer but more informative examples.
-* **EZR Framework**: Modular pipeline combining active learning, decision trees, and explanation.
-* **Efficiency**: Achieves ≥90% of the best-known optimization results in **73% of 60 datasets**, using far fewer labels.
-* **Explanations that matter**: Provides global and local cohort-based rationales that are clearer and more actionable than standard XAI methods.
-* **Downstream Utility**: Explanation-driven feature selection improves predictive performance.
 
 ---
 
@@ -35,11 +26,14 @@ EZR achieves near state-of-the-art optimization performance with a fraction of t
 
 ```bash
 Minimal-Data-Maximum-Clarity/
-├── src/                # Source codes for EZR framework
-├── datasets/           # 60 datasets from MOOT repository (configs, processes, HPO, etc.)
-├── scripts/            # Scripts and configs for replicating results
+├── src/                # Source codes for EZR framework and extensive experiments
+├── datasets/           # 60 datasets from MOOT repository
+├── scripts/            # Scripts for replicating results
 ├── results/            # Experimental results and analysis
-├── paper_materials/    # Figures, tables, and supplementary material for the paper
+│   ├── opt_results/    # Per-dataset raw results of RQ1 (optimization)
+│   ├── FS_results/     # Per-dataset raw results of RQ3 (feature selection)
+│   └── Explanations/   # Explanations outcomes for RQ2
+├── paper_materials/    # supplementary materials for the paper
 └── README.md           # Project documentation
 ```
 
@@ -94,76 +88,31 @@ Ensure these are in your Python path or the same directory as the main scripts.
   - For PyTorch, follow the [official installation guide](https://pytorch.org/get-started/locally/) to select the correct wheel for CPU/GPU.  
 ---
 
-## 🔎 Usage
-
-### Run EZR on a Dataset
-
-```bash
-python src/run_ezr.py --dataset datasets/coc1000.csv --budget 60
-```
-
-* `--dataset`: Path to dataset (tabular format with x/y columns).
-* `--budget`: Labeling budget (default: 60).
-
-### Compare Against Baselines
-
-```bash
-python experiments/run_baselines.py --dataset datasets/coc1000.csv
-```
-
-This benchmarks EZR against regression methods (LR, RF, SVR, ANN, LGBM) and random selection.
-
----
-
 ## 📊 Reproducing Results
 
 The experiments described in the paper can be reproduced with:
 
 ```bash
-bash experiments/run_all.sh
+bash scripts/reproduce.sh
 ```
 
 This will:
 
-* Optimize configurations across 60 datasets.
-* Generate global & local explanations.
-* Compare feature selection methods (EZR, SHAP, ReliefF, ANOVA).
-* Output results into the `results/` directory.
-
+* Run EZR and optimization baselines on all datasets(RQ1).
+* Run downstream feature selection methods(RQ3).
+* Generate global & local explanations for sample data(coc1000)(RQ2).
+* Output raw results and extracted analytics into the `results/` directory.
 ---
 
 ## 📂 Datasets
 
 We use **60 datasets** from the [MOOT repository](https://github.com/timm/moot/tree/master/optimize), covering:
 
-* **Configurations** (e.g., Apache, SQL, X264)
-* **Feature Models** (FFM, FM)
-* **Software Process Models** (COC1000, POM3, XOMO)
+* **Configurations**
+* **Feature Models**
+* **Software Process Models**
 * **Scrum feature configurations**
-* **Miscellaneous datasets** (Wine, auto93)
-
----
-
-## 📈 Results at a Glance
-
-* **Optimization**: EZR achieves ≥90% of best-known performance in **44/60 datasets (73%)** with minimal labels.
-* **Explanations**: Cohort-based explanations outperform LIME, SHAP, and BreakDown in clarity and actionability.
-* **Downstream Validation**: Feature rankings from EZR improve regression models on par with or better than standard feature selection methods.
-
----
-
-## 🧩 Citation
-
-If you use EZR or this repository in your research, please cite our paper:
-
-```bibtex
-@article{rayegan2025minimal,
-  title={Minimal Data, Maximum Clarity: A Heuristic for Explaining Optimization},
-  author={Rayegan, Amirali and Menzies, Tim},
-  journal={Journal of Systems and Software},
-  year={2025}
-}
-```
+* **Miscellaneous datasets**
 
 ---
 
@@ -177,9 +126,23 @@ This repository is released under the **MIT License**.
 
 For questions or collaboration:
 
-* **Amirali Rayegan** – [GitHub](https://github.com/amiiralii)
-* **Tim Menzies** – North Carolina State University
+* **Amirali Rayegan** – [GitHub](https://amiiralii.github.io/)
+* **Tim Menzies** – [Website](https://timm.fyi/)
 
 ---
 
-👉 Would you like me to also **add badges (build/test status, license, DOI, etc.)** and a **graphical summary figure** from your paper into the README to make it even more journal/professional submission ready?
+## 🧩 Citation
+
+If you use EZR or this repository in your research, please cite our paper:
+
+```bibtex
+<!-- @article{rayegan2025minimal,
+  title={Minimal Data, Maximum Clarity: A Heuristic for Explaining Optimization},
+  author={Rayegan, Amirali and Menzies, Tim},
+  journal={Journal of Systems and Software},
+  year={2025}
+} -->
+To be Updated!
+```
+* Paper DOI
+* Dataset DOI
