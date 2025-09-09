@@ -106,7 +106,7 @@ This will:
 
 ## 📂 Datasets
 
-We use **60 datasets** from the [MOOT repository](https://github.com/timm/moot/tree/master/optimize), covering:
+We use **60 datasets** from the [MOOT repository](https://github.com/timm/moot/tree/master), covering:
 
 * **Configurations**
 * **Feature Models**
@@ -126,7 +126,7 @@ This repository is released under the **MIT License**.
 
 For questions or collaboration:
 
-* **Amirali Rayegan** – [GitHub](https://amiiralii.github.io/)
+* **Amirali Rayegan** – [Website](https://amiiralii.github.io/)
 * **Tim Menzies** – [Website](https://timm.fyi/)
 
 ---
@@ -136,13 +136,6 @@ For questions or collaboration:
 If you use EZR or this repository in your research, please cite our paper:
 
 ```bibtex
-<!-- @article{rayegan2025minimal,
-  title={Minimal Data, Maximum Clarity: A Heuristic for Explaining Optimization},
-  author={Rayegan, Amirali and Menzies, Tim},
-  journal={Journal of Systems and Software},
-  year={2025}
-} -->
-To be Updated!
+Links to be Updated!
 ```
-* Paper DOI
-* Dataset DOI
+

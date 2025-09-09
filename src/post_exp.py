@@ -33,7 +33,7 @@ def fs_process_csv_file(file_path):
     return results, features_count, budget
 
 def fs_analyze_results():
-    results_dir = Path('../FS_results/')
+    results_dir = Path('../results/FS_results/')
     dataset_info = pd.read_csv('../datasets/datasets_details.csv')
     dataset_info.columns = [i.strip() for i in dataset_info.columns]
     for col in dataset_info.select_dtypes(include=['object']).columns:
@@ -137,7 +137,7 @@ def opt_process_csv_file(file_path):
     return results, features_count, budget
 
 def opt_analyze_results():
-    results_dir = Path('../opt_results/')
+    results_dir = Path('../results/opt_results/')
     dataset_info = pd.read_csv('../datasets/datasets_details.csv')
     dataset_info.columns = [i.strip() for i in dataset_info.columns]
     for col in dataset_info.select_dtypes(include=['object']).columns:

@@ -70,7 +70,7 @@ def global_explanation(X_train, X_test, y_train, y_test, features):
     # plt.tight_layout()
 
     # # Save the plot
-    # plt.savefig(f'explanations/feature_importance_comparison_{sys.argv[1].split("/")[-1][:-4]}.png', 
+    # plt.savefig(f'../results/explanations/feature_importance_comparison_{sys.argv[1].split("/")[-1][:-4]}.png', 
     #             dpi=300, bbox_inches='tight')
 
 def run_local_explainer(X_train, X_test, y_train, y_test, features, idx):
@@ -120,7 +120,7 @@ def run_local_explainer(X_train, X_test, y_train, y_test, features, idx):
     B               = 0                # disable bootstrapping for exact path
     )
     bd.plot()
-    plt.savefig(f"explanations/{sys.argv[1].split('/')[-1][:-4]}_breakdown.png", dpi=300, bbox_inches="tight")
+    plt.savefig(f"../results/explanations/{sys.argv[1].split('/')[-1][:-4]}_breakdown.png", dpi=300, bbox_inches="tight")
     plt.show()
     print(bd.result)
 
@@ -139,7 +139,7 @@ def run_local_explainer(X_train, X_test, y_train, y_test, features, idx):
         show=False
     )
     plt.tight_layout()
-    plt.savefig(f"explanations/{sys.argv[1].split("/")[-1][:-4]}_shap_summary.png", dpi=300, bbox_inches="tight")
+    plt.savefig(f"../results/explanations/{sys.argv[1].split("/")[-1][:-4]}_shap_summary.png", dpi=300, bbox_inches="tight")
     plt.clf()
     shap.plots.waterfall(
     shap.Explanation(
@@ -150,7 +150,7 @@ def run_local_explainer(X_train, X_test, y_train, y_test, features, idx):
     show=False
     )
     plt.tight_layout()
-    plt.savefig(f"explanations/{sys.argv[1].split("/")[-1][:-4]}_shap_waterfall.png", dpi=300, bbox_inches="tight")
+    plt.savefig(f"../results/explanations/{sys.argv[1].split("/")[-1][:-4]}_shap_waterfall.png", dpi=300, bbox_inches="tight")
     plt.clf()
 
     print('-------LIME:-------')
@@ -180,7 +180,7 @@ def run_local_explainer(X_train, X_test, y_train, y_test, features, idx):
         direction = "↑" if weight > 0 else "↓"
         print(f"{feature:>20}: {weight:+.3f} ({direction})")
     
-    exp.save_to_file(f'explanations/{sys.argv[1].split("/")[-1][:-4]}_lime.html')
+    exp.save_to_file(f'../results/explanations/{sys.argv[1].split("/")[-1][:-4]}_lime.html')
     return
 
 
