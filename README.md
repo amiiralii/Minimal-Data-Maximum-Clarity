@@ -95,15 +95,18 @@ You can find results of experiments that answer each of the research questions:
 
 - **RQ1: Effectiveness on Optimization**  
   *To what extent can EZR discover near-optimal configuration settings, and how does its performance compare to state-of-the-art models?*  
-  📄 [Results for RQ1](link-to-RQ1-results) :contentReference[oaicite:0]{index=0}
+  📄 [RQ1 Raw Results per datasets](https://github.com/amiiralii/Minimal-Data-Maximum-Clarity/tree/main/results/opt_results)
+  📄 [RQ1 Aggregated Results](https://github.com/amiiralii/Minimal-Data-Maximum-Clarity/blob/main/results/optimization_results.csv)  
 
 - **RQ2: Comparison to Standard XAI**  
   *To what extent can EZR’s “less is more” heuristic generate explanations whose clarity and actionable insight match or exceed those produced by established XAI techniques?*  
-  📄 [Results for RQ2](link-to-RQ2-results) :contentReference[oaicite:1]{index=1}
+  📄 [RQ2 Materials](https://github.com/amiiralii/Minimal-Data-Maximum-Clarity/tree/main/results/explanations)
 
 - **RQ3: Practical Utility of Explanations**  
   *To what extent can EZR’s explanations generate feature rankings that improve downstream optimization performance, and how does this compare to other feature ranking methods?*  
-  📄 [Results for RQ3](link-to-RQ3-results) :contentReference[oaicite:2]{index=2}
+  📄 [RQ3 Raw Results per datasets](https://github.com/amiiralii/Minimal-Data-Maximum-Clarity/tree/main/results/FS_results)
+  📄 [RQ3 Aggregated Results](https://github.com/amiiralii/Minimal-Data-Maximum-Clarity/blob/main/results/fs_results.csv)  
+
 
 ---
 
