@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divCYHJRJ755824435"></div>
+        <div class="lime top_div" id="top_divW3EQVO06BUUAOI2"></div>
         
         <script>
-        var top_div = d3.select('#top_divCYHJRJ755824435').classed('lime top_div', true);
+        var top_div = d3.select('#top_divW3EQVO06BUUAOI2').classed('lime top_div', true);
         
         
                     var pp_div = top_div.append('div')
                                         .classed('lime predicted_value', true);
                     var pp_svg = pp_div.append('svg').style('width', '100%');
-                    var pp = new lime.PredictedValue(pp_svg, 0.4999343462628305, 0.3630994955748681, 0.5655180627139527);
+                    var pp = new lime.PredictedValue(pp_svg, 0.4999343462628305, 0.37589254102081576, 0.5666769097902971);
                     
         var exp_div;
             var exp = new lime.Explanation(["negative", "positive"]);
         
             exp_div = top_div.append('div').classed('lime explanation', true);
-            exp.show([["SCED <= 2.00", 0.017721165739955625], ["ACAP <= 2.00", 0.009962536525052901], ["2.00 < PMAT <= 4.00", -0.0069322084002233055], ["4.00 < TIME <= 5.00", 0.004725036564780878], ["DOCU <= 2.00", 0.0030872880187925622], ["STOR <= 4.00", -0.002594938643018602]], 1, exp_div);
+            exp.show([["SCED <= 2.00", 0.017480816055745765], ["ACAP <= 2.00", 0.009606741790219173], ["2.00 < PMAT <= 4.00", -0.006024281398908195], ["4.00 < TIME <= 5.00", 0.005776089980861742], ["4.00 < PREC <= 5.00", 0.0026024752479234022], ["DOCU <= 2.00", 0.0025548898770695674]], 1, exp_div);
             
         var raw_div = top_div.append('div');
-            exp.show_raw_tabular([["SCED", "2.00", 0.017721165739955625], ["ACAP", "2.00", 0.009962536525052901], ["PMAT", "3.00", -0.0069322084002233055], ["TIME", "5.00", 0.004725036564780878], ["DOCU", "1.00", 0.0030872880187925622], ["STOR", "3.00", -0.002594938643018602]], 1, raw_div);
+            exp.show_raw_tabular([["SCED", "2.00", 0.017480816055745765], ["ACAP", "2.00", 0.009606741790219173], ["PMAT", "3.00", -0.006024281398908195], ["TIME", "5.00", 0.005776089980861742], ["PREC", "5.00", 0.0026024752479234022], ["DOCU", "1.00", 0.0025548898770695674]], 1, raw_div);
         
         </script>
         </body></html>

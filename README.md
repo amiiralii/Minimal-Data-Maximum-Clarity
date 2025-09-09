@@ -3,6 +3,7 @@
 **A Heuristic for Explaining Optimization with Less Data**
 
 Authors: *Amirali Rayegan, Tim Menzies*
+
 Affiliation: *North Carolina State University*
 
 ---
@@ -88,6 +89,24 @@ Ensure these are in your Python path or the same directory as the main scripts.
   - For PyTorch, follow the [official installation guide](https://pytorch.org/get-started/locally/) to select the correct wheel for CPU/GPU.  
 ---
 
+## 🔍 Research Questions and Results
+
+You can find results of experiments that answer each of the research questions:
+
+- **RQ1: Effectiveness on Optimization**  
+  *To what extent can EZR discover near-optimal configuration settings, and how does its performance compare to state-of-the-art models?*  
+  📄 [Results for RQ1](link-to-RQ1-results) :contentReference[oaicite:0]{index=0}
+
+- **RQ2: Comparison to Standard XAI**  
+  *To what extent can EZR’s “less is more” heuristic generate explanations whose clarity and actionable insight match or exceed those produced by established XAI techniques?*  
+  📄 [Results for RQ2](link-to-RQ2-results) :contentReference[oaicite:1]{index=1}
+
+- **RQ3: Practical Utility of Explanations**  
+  *To what extent can EZR’s explanations generate feature rankings that improve downstream optimization performance, and how does this compare to other feature ranking methods?*  
+  📄 [Results for RQ3](link-to-RQ3-results) :contentReference[oaicite:2]{index=2}
+
+---
+
 ## 📊 Reproducing Results
 
 The experiments described in the paper can be reproduced with:
@@ -102,8 +121,8 @@ This will:
 * Run downstream feature selection methods(RQ3).
 * Generate global & local explanations for sample data(coc1000)(RQ2).
 * Output raw results and extracted analytics into the `results/` directory.
----
 
+---
 ## 📂 Datasets
 
 We use **60 datasets** from the [MOOT repository](https://github.com/timm/moot/tree/master), covering:

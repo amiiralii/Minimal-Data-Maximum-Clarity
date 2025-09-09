@@ -1,5 +1,4 @@
 # Moot: Multi-objective optimization test data
----
 Moot is such a good name for datasets to be used to assess different algorithms.
 
 moot:
